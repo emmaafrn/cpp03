@@ -12,8 +12,8 @@ ScavTrap::~ScavTrap(){
 	std::cout << "ScavTrap " << Name << " died" << std::endl;
 }
 void		ScavTrap::attack(std::string const &target){
-	if (EnergyPoints > 0)
-		std::cout << "ScavTrap " << Name << " attack " << target << ", causing " << Hitpoints << " points of damage\n";
+	if (Hitpoints > 0)
+		std::cout << "ScavTrap " << Name << " attack " << target << ", causing " << AttackDamage << " points of damage\n";
 }
 
 void	ScavTrap::guardGate(){
